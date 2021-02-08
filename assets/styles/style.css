@@ -1,0 +1,394 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+#favicon{
+    float:left;
+    margin:5px;
+    text-align: center;
+    margin: 15px;
+    font-family: 'Cookie', cursive;
+    font-size: 30px;
+      letter-spacing: 2px;
+    word-spacing:5px;
+}
+nav{
+    height:60px;
+    display: flex;
+    width: 100%;
+    box-shadow:2px 5px 4px gray ;
+    position: fixed;
+    background-color: black;
+    justify-content: space-between;
+    color:white;
+  
+}
+nav ul{
+    float:right;
+    margin: 15px;
+    font-size:16px;
+}
+nav ul li{
+    list-style: none;
+    float : left;
+    padding-right:25px;
+    text-transform: uppercase;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    
+}
+.home{
+    max-width:100%;
+    display: flex;
+    flex-direction: row;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background: #74ebd5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #74ebd5, #acb6e5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #74ebd5, #acb6e5);   
+}
+
+
+.home div{
+    width : 80%;
+    height: 80vh;
+    margin-top:60px;  
+    
+}
+#inner-div {
+    text-align: justify;
+    padding:5px;
+    height : 200px;
+    position: relative;
+    animation-name: move ;
+    animation-duration: 5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+#inner-div h1{
+    font-size: 34px;  
+}
+@keyframes move{
+    0%{
+        visibility: hidden;
+        left : -60px;
+    }
+    100%{
+        visibility: visible;
+        left:30px;
+
+    }
+}
+
+
+#image img{
+    width:480px;
+    height: auto;
+    margin: auto 50px;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    padding:12px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+button a{
+    text-decoration: none;
+    color:black;  
+}
+
+button:hover{
+    background-color:black;
+    cursor: pointer;
+    border: black;
+}
+
+button a:hover {
+    color:white;
+}
+
+.education, .project{  
+    display: table;
+    height:50vh;
+    width:100%;
+    padding: 100px 0px;
+    background:url(/assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.heading{
+    width:100%;
+    height:40px;
+    text-align: center;
+    font-size: 20px;
+}
+.heading :hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+.education h1,.skills h1,.project h1{
+    margin-bottom:40px;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #000;
+    display :inline-block;
+    text-align: center;
+    padding:10px 50px;
+    border-radius:10px;
+    background-color: white;
+
+}
+.education h1 :hover, .skills h1 :hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.education .inner{
+    padding:10px;
+    display: inline-flex;
+    flex-direction: column;
+    width:60%;
+    float : left;
+    margin-top : 80px;
+    margin-left: 50px;
+}
+
+.education .inner #box{
+    float: left;
+    width:80%;
+    margin:10px auto ;
+   
+}
+.education .inner div img{
+    width:100px;
+    height:auto;
+}
+#box :hover{
+    transition: 1s;
+    transform: translate(0, -10px);    
+}
+
+.skills {
+    display: table;
+    height:50vh;
+    width:100%;
+    padding: 100px 0px;
+    background-color :#2b2b94;
+    align-items: center;
+    
+}
+
+.skills .inner{ 
+    width:80%;
+    height:auto;
+    background-image:url(/assets/img/skills.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center; 
+    display:flex ;
+    flex-direction: row;
+    padding: 0px 10px;
+    margin:80px auto ;
+
+}
+.skills .inner div{
+    width:30%;
+    margin:10px;
+    height:auto;
+    padding:20px;
+    background-color: #ffffff;
+    color:black;
+    border-radius: 40px; 
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: large;
+    
+}
+.skills .inner div h2{
+    color:#2b2b94;
+}
+.skills .inner div ul{
+    padding: 0px;
+}
+.skills .inner div ul li{
+    list-style: none;
+    line-height: 30px;
+    word-spacing: 10px;
+}
+
+.skills .inner #box1{
+    margin-right:420px;
+}
+
+.skills .inner div:hover{
+    transform: scale(1.1);
+}
+
+.project .inner{
+    width: 50%;
+    margin:50px 0px 0px 30px;
+    display:flex;
+    font-size:18px;
+    flex-direction: column;
+    height: 100%;
+    align-items:center ;
+    justify-content: center;
+}
+
+.project .inner .cards{
+    background-color: rgba(255, 255, 255,0.2);
+    border-radius: 20px;
+    height:40vh;
+    display: flex;
+    flex-direction: row;
+    margin:20px 0px 10px 20px;
+  
+}
+.project .inner .cards:hover{
+   box-shadow: 3px 6px 20px white;
+   cursor: pointer;
+   
+}
+.project .inner .cards .row{
+   padding:10px;
+   width:45%;
+   text-align: justify;
+}
+.project .inner .cards .row h3{
+    padding: 0px;
+}
+.project .inner .cards img{
+    height:36vh;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+footer{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 5px;
+}
+
+footer div{
+    height: 30vh;
+    text-align: center;
+    padding:0px;
+}
+
+
+footer div .icon{
+    height:10vh;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+footer div .icon a{
+    padding:20px;
+}
+footer div .icon a img:hover{
+    transform: scale(1.2);
+}
+
+@media (min-width:592px) and (max-width:768px){
+    nav ul{
+        font-size:14px;
+    }
+
+    #inner-div h1{
+        font-size:14px;
+    }
+    .home #inner-div{
+        font-size: 12px;
+    }
+    #image{
+       flex-direction: column;
+    }
+    #image img{
+        width:400px;
+        margin:20px 5px;
+        align-items: flex-end;
+    }
+    .education{
+        margin:0 auto;
+        align-items: center;
+    }
+    .education .inner{
+        width:60%;
+        align-items: center;
+       justify-content: space-around;
+    }
+    .project .inner{
+        font-size: 14px;
+        margin:30px auto;
+    }
+}
+
+@media (min-width:320px) and (max-width:569px){
+    #favicon{
+        font-size: 12px;
+        text-align: left;
+        margin: 5px;
+    }
+    nav{
+        height:30px;
+    }
+    nav ul{
+        margin:5px;
+        justify-content: center;
+        padding:auto 0px;
+    }
+    nav ul li{
+        font-size:8px;
+        padding-right:5px;
+      
+    }
+
+    #inner-div h1{
+        font-size:12px;
+    }
+    .home #inner-div{
+        font-size: 10px;
+        width:70%;
+        margin:10px auto;
+    }
+    .home{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home div{
+        margin:0px;
+    }
+    #image img{
+        width:250px;
+        margin:0px;
+        padding-top:50px;
+    }
+    .education{
+        margin:0 auto;
+        align-items: center;
+    }
+    .education .inner{
+        width:60%;
+        align-items: center;
+       justify-content: space-around;
+    }
+    .project .inner{
+        font-size: 14px;
+        margin:30px auto;
+    }
+ }
+}

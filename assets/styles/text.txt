@@ -1,0 +1,33 @@
+  <div id="box1">
+                <h2>Tools I Know</h2>
+                <ul>
+                    <li>Adobe XD</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Balsamiq</li>
+                    <li>Mockups</li>
+                    <li>Figma</li>
+                </ul>
+
+                <h2>Things I Know</h2>
+                <ul>
+                    <li>UX</li>
+                    <li>UI</li>
+                    <li>Web</li>
+                </ul>
+            </div>
+
+            <div id="box2">
+                <h2>Languages I Know</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Javascript</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                </ul>
+                <h2>Dev Tools</h2>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Codepen</li>
+                    <li>Github</li>
+                </ul>
+            </div>
